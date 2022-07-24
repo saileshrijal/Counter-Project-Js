@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aquamarine;
+}
+
+.counter_container {
+  background-color: darkslateblue;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.counter_container h1 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.counter_container #counter_number {
+  color: blanchedalmond;
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.counter_container .button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  width: 100%;
+  font-size: 1rem;
+  border: 0.2rem solid black;
+  padding: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: aquamarine;
+  transition: 0.3s;
+}
+
+/* responsive */
+@media screen and (max-width: 535px) {
+  .counter_container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .counter_container .button_container {
+    flex-direction: column;
+  }
+}
